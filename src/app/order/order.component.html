@@ -1,0 +1,9 @@
+<div *ngFor="let val of cart" class="mb-4 p-3 border rounded">
+  <p>Experience the Fusion of Luxury and Performance with Audi: Where Innovation Meets the Road.</p>
+  <img [src]="val.image" class="img-fluid rounded mb-2" alt="Product Image">
+
+  <p class="mb-1 font-weight-bold">Product Name: {{ val.name }}</p>
+  <p class="mb-1">Price: {{ val.price }}</p>
+
+
+</div>

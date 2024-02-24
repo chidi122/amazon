@@ -1,0 +1,30 @@
+<div class="product-list-container d-flex justify-content-center align-items-center">
+  <div class="row">
+    <div *ngFor="let product of products; let i = index" class="col-xl-3 col-lg-3 col-md-6 col-sm-12 my-3 mx-3 my-3">
+      <div class="card">
+
+        <img [src]="product.image" class="card-img-top img-fluid" style="height: 300px" />
+        <div class="card-body">
+          <h5 class="card-title">{{ product.name }}</h5>
+          <p class="card-text">
+
+            {{ product.price }}
+
+          </p>
+
+          <p *ngIf="!product.availability" class="text-danger">out of stock</p>
+
+          <a [routerLink]="['/products', i]" *ngIf="product.availability" class="btn btn-primary">
+            Details
+          </a>
+
+
+
+          <button *ngIf="product.availability" class="btn btn-light" (click)="addToCart(product)">
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div>
+  <figure class="figure">
+    <img [src]="product.image" class="figure-img img-fluid rounded" alt="{{ product.name }}">
+    <figcaption class="figure-caption text-center">{{ product.name }}</figcaption>
+  </figure>
+
+  <p>Price: <span>{{ product.price }}</span></p>
+  <p>{{ product.description }}</p>
+  <button class="btn btn-success" (click)="addToCart()">Add to cart</button>
+</div>

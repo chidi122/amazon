@@ -1,0 +1,35 @@
+
+.mb-4.p-3.border.rounded {
+  background-color: #fff; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  border: none; 
+  border-radius: 10px; 
+  margin-bottom: 30px; 
+  padding: 20px; 
+}
+
+
+.mb-4.p-3.border.rounded > p:first-child {
+  font-style: italic; 
+  margin-bottom: 20px; 
+  color: #555; 
+}
+
+
+.img-fluid.rounded.mb-2 {
+  max-height: 250px; 
+  object-fit: cover; 
+  border-radius: 5px; 
+}
+
+
+.mb-1.font-weight-bold {
+  color: #333; 
+  font-size: 1.2rem; 
+}
+
+
+.mb-1 {
+  color: #007BFF; 
+  font-weight: bold; 
+}
